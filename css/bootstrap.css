@@ -65,7 +65,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
+  /* text-align: left; */
   background-color: #fff;
 }
 
@@ -4031,6 +4031,7 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: right;
 }
 
 .navbar-toggler {
@@ -6038,14 +6039,12 @@ button.close {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
+  top: 10%;
+  left: 5%;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .align-baseline {

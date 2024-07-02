@@ -1,4 +1,9 @@
-header nav{
-    display: flex;
-    justify-content: space-around;
+div.carousel-caption {
+    background-color: rgba(199, 199, 199, 0.596);
+    border-radius: 5px;
+}
+
+div.carousel-caption h1{
+    color: black;
+    font-weight: bold;
 }
