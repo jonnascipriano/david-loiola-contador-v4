@@ -6040,7 +6040,8 @@ button.close {
 .carousel-caption {
   position: absolute;
   top: 10%;
-  left: 5%;
+  left: 10%;
+  right: 10%;
   z-index: 10;
   padding: 20px;
   color: #fff;

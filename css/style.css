@@ -6,4 +6,10 @@ div.carousel-caption {
 div.carousel-caption h1{
     color: black;
     font-weight: bold;
+    font-size: 2rem;
+}
+
+div.carousel-caption p{
+    color: black;
+    font-size: 1rem;
 }
