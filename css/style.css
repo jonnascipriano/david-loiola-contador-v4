@@ -23,6 +23,10 @@ body{
     color: var(--cor1);
 }
 
+.top-screen{
+    position: absolute;
+    top: 20%;
+}
 
 
 div.carousel-caption {
@@ -145,3 +149,9 @@ div.cx-neg span{
 div.cx-neg img{
     width: 90px;
 }
+
+/* @media screen and (max-width: 576px) {
+    div.carousel-caption h1{
+        color: red;
+    }
+} */
