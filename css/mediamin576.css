@@ -799,9 +799,9 @@
     .init-hidden-main{
       opacity: 0;
       transition: opacity 1s linear;
-      transition-delay: .5s;
+      transition-delay: .2s;
       display: block;
-      left: -5000px;
+      left: -1000px;
   }
   
   .init-hidden-main-off{
