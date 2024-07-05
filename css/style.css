@@ -52,7 +52,7 @@ body{
 
 .top-screen{
     position: absolute;
-    top: 20%;
+    top: 15%;
 }
 
 
@@ -61,7 +61,7 @@ div.carousel-caption {
     /* border-radius: 15px; */
     width: 100%;
     height: 100%;
-    top: 0;
+    top: -0px;
     position: absolute;
     /* top: 50%;
     left: 50%;
@@ -115,14 +115,15 @@ div.carousel-caption button:hover{
 }
 
 section#negocios{
-    margin: 80px auto;
+    /* position: relative; */
+    top: -100px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 17px;
     /* box-sizing: border-box; */
-
 }
 
 section#negocios div#negocios-hd{
@@ -145,8 +146,7 @@ div#tipos-negocios{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 15px 20px;
-    
+
 }
 
 div#tipos-negocios a{
@@ -165,11 +165,11 @@ div.cx-neg{
     border: 1px solid var(--cor2);
     border-radius: 15px;
     padding: 15px;
-    background-color: rgba(210, 239, 255, 0.158);
-    color: var(--cor2);
+    background-color: #000000;
+    color: white;
     font-weight: bold;
-    box-shadow: 0px 1px 10px 1px #00000071;
-
+    box-shadow: 0px 1px 10px 1px #00000036;
+    transition: .5s;
     /* position: relative;
     animation-name: animacao-caixa;
     animation-duration: 3s;
@@ -189,9 +189,52 @@ div.cx-neg img{
     width: 90px;
 }
 
-/* @media screen and (max-width: 576px) {
-    div.carousel-caption h1{
-        color: red;
-    }
-} */
+div.cx-neg:hover{
+    background: white;
+    color: var(--cor1);
+}
 
+
+section#nossos-servicos{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+section#nossos-servicos h2{
+    font-weight: bold;
+}
+
+div#servicos-container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.servicos-itens{
+    width: 200px;
+    margin: 30px;
+}
+
+div.servicos-itens img{
+    width: 40px;
+    float: left;
+}
+
+div.servicos-itens h3{
+    font-size: 20px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    text-align: center;
+}
+
+div.servicos-itens p{
+    font-size: 14px;
+    float: right;
+    text-align: justify;
+}

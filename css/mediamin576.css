@@ -798,10 +798,10 @@
 
     .init-hidden-main{
       opacity: 0;
-      transition: opacity .5s linear;
-      transition-delay: .1s;
+      transition: opacity .2s linear;
+      /* transition-delay: .1s; */
       display: block;
-      left: -800px;
+      left: -600px;
   }
   
   .init-hidden-main-off{
