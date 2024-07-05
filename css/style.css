@@ -49,7 +49,6 @@ body{
 }
 
 
-
 .top-screen{
     position: absolute;
     top: 15%;
@@ -163,7 +162,7 @@ div.cx-neg{
     align-items: center;
     justify-content: center;
     border: 1px solid var(--cor2);
-    border-radius: 15px;
+    /* border-radius: 15px; */
     padding: 15px;
     background-color: #000000;
     color: white;
@@ -197,19 +196,23 @@ div.cx-neg:hover{
 
 section#nossos-servicos{
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
+    /* text-align: center; */
 }
 
 section#nossos-servicos h2{
     font-weight: bold;
+    text-align: center;
 }
 
 div#servicos-container{
-    width: 70%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,24 +220,31 @@ div#servicos-container{
 }
 
 div.servicos-itens{
-    width: 200px;
-    margin: 30px;
+    display: flex;
+    width: 300px;
+    margin: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to top, #edf0fc, #FFFFFF);
 }
 
 div.servicos-itens img{
     width: 40px;
-    float: left;
+    height: 40px;
+    margin: 0 10px;
 }
 
 div.servicos-itens h3{
     font-size: 20px;
     font-weight: bold;
     /* text-transform: uppercase; */
-    text-align: center;
+    /* height: 40px */
 }
 
 div.servicos-itens p{
     font-size: 14px;
-    float: right;
-    text-align: justify;
+}
+
+div.servicos-itens a{
+    font-size: 12px;
 }
