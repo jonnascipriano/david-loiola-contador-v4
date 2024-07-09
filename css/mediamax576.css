@@ -1,0 +1,18 @@
+@media screen and (max-width: 576px) {
+
+    section#aces-cres{
+
+        background-position: center 300px;
+
+          & div{
+            width: 80%;
+            margin: auto auto;
+          }
+      }
+    
+
+    footer{
+        flex-direction: column;
+    }
+
+}
