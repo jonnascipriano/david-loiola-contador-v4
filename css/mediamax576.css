@@ -11,8 +11,9 @@
       }
     
 
-    footer{
-        flex-direction: column;
+    #ft-d{
+      flex-direction: column;
+      text-align: center;
     }
 
 }
