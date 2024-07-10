@@ -1,5 +1,10 @@
 @media screen and (max-width: 576px) {
 
+
+
+  section#carrosel{
+    margin-top: 120px
+  }
   section#nossos-servicos{
     margin-top: 100px;
   }
@@ -25,5 +30,11 @@
   #ft-d {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  section#carrosel{
+    margin-top: 80px
   }
 }

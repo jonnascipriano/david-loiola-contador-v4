@@ -24,6 +24,16 @@ body{
     color: var(--cor1);
 }
 
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    /* padding: 0 0 100px 0;
+    margin: 0 0 100px 0; */
+    /* border: 1px solid red; */
+}
+
 ul li{
     list-style: none;
 }
@@ -59,6 +69,10 @@ ul li{
     top: 15%;
 }
 
+section#carrosel{
+    margin-top: 80px;
+    /* border: 1px solid blue; */
+}
 
 div.carousel-caption {
     background-color: rgba(199, 199, 199, 0.774);
@@ -70,7 +84,7 @@ div.carousel-caption {
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    z-index: 10;
+    z-index: 1;
     /* padding: 20px; */
     color: #fff;
     text-align: center;
@@ -79,7 +93,6 @@ div.carousel-caption {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 
 }
 
