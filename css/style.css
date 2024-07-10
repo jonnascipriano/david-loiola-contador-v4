@@ -439,6 +439,7 @@ footer{
 
     & .name-logo-footer{
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
 
