@@ -1,19 +1,29 @@
 @media screen and (max-width: 576px) {
 
-    section#aces-cres{
+  section#nossos-servicos{
+    margin-top: 100px;
+  }
+  section#cont-home {
+    height: 600px;
+    justify-content: start;
 
-        background-position: center 300px;
-
-          & div{
-            width: 80%;
-            margin: auto auto;
-          }
-      }
-    
-
-    #ft-d{
-      flex-direction: column;
-      text-align: center;
+    & div{
+        padding-right: 10px;
     }
+  }
+  section#aces-cres {
+    background-position: center center;
 
+    & div {
+      width: 80%;
+      margin: auto auto;
+    }
+  }
+
+
+
+  #ft-d {
+    flex-direction: column;
+    text-align: center;
+  }
 }
