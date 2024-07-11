@@ -27,9 +27,10 @@
 
 
 
-  #ft-d {
+  footer div#ft-d {
     flex-direction: column;
-    text-align: center;
+    /* text-align: start; */
+    margin: 0 30px;
   }
 }
 
