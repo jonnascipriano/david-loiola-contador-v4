@@ -54,42 +54,89 @@
 
     <footer>
 
-        <div id="ft-d">
+      <div id="ft-d">
           <ul>
-            <h5>Nossos serviços</h5>
-            <li><a href="">Abrir empresa</a></li>
-            <li><a href="">Migrar Contabilidade</a></li>
-            <li><a href="">Regularizar CNPJ</a></li>
-            <li><a href="">BPO Financeiro</a></li>
-            <li><a href="">Acessoria Contábil</a></li>
+              <h5>Nossos serviços</h5>
+              <li><a href="">Abrir empresa</a></li>
+              <li><a href="">Migrar Contabilidade</a></li>
+              <li><a href="">Regularizar CNPJ</a></li>
+              <li><a href="">BPO Financeiro</a></li>
+              <li><a href="">Acessoria Contábil</a></li>
           </ul>
-          <div class="logo-footer">
-            <img src="assets/icons/only-icon.ico" alt="">
-            <div class="name-logo-footer">
-              <p style="font-size: 38px; font-weight: bold; color: var(--cor3);">David Loiola</p>
-              <p style="font-size: 12px; line-height: 2; margin-top: -30px;">Contabilidade e Consultoria Empresarial</p>
-            </div>
-          </div>
+          <!-- <div class="logo-footer">
+              <img src="assets/icons/only-icon.ico" alt="">
+              <div class="name-logo-footer">
+                  <p style="font-size: 38px; font-weight: bold; color: var(--cor3);">David Loiola</p>
+                  <p style="font-size: 12px; line-height: 2; margin-top: -30px;">Contabilidade e Consultoria
+                      Empresarial</p>
+              </div>
+          </div> -->
           <ul>
-            <h5>Faça parte desse time!</h5>
-            <li>
-              <a href="https://wa.me/message/ELGWTPAYGTWRC1" target="_blank"><img src="assets/icons/whatsapp-black.png"
-                  alt="whatsapp"></a>
-              <a href="https://instagram.com/davidloiola_" target="_blank"><img src="assets/icons/instagram-black.png"
-                  alt="instagram"></a>
-              <a href="davidloiolacontabilidade@gmail.com" target="_blank"><img src="assets/icons/e-mail-black.png"
-                  alt="e-mail"></a>
-              <a href="https://www.linkedin.com/in/davidloiola/" target="_blank"><img src="assets/icons/linkedin-black.png"
-                  alt="linkedin"></a>
-            </li>
-            <!-- <li><a href=""><img src="assets/icons/instagram-black.png" alt="instagram"></a></li> -->
-            <!-- <li><a href=""><img src="assets/icons/e-mail-black.png" alt="e-mail"></a></li> -->
-            <!-- <li><a href=""><img src="assets/icons/linkedin-black.png" alt="linkedin"></a></li> -->
+              <h5>Contato</h5>
+              <li>
+                  <a href="https://wa.me/message/ELGWTPAYGTWRC1" target="_blank"><img
+                  src="assets/icons/whatsapp-black.png" alt="whatsapp"> (88) 99300-2849</a>
+              </li>
+              <li>
+                  <a href="davidloiolacontabilidade@gmail.com" target="_blank"><img
+                      src="assets/icons/e-mail-black.png" alt="e-mail"> davidloiolacontabilidade@gmail.com</a>
+              </li>
           </ul>
-        </div>
-        <p class="footer-copy">Todos os direitos reservados - David Loiola Contabilidade - CNPJ: 00-000.000/0000-00<br><span
-            id="copy-site">Site criado por <a href="">Jonnas Cipriano</a></span></p>
-      </footer>
+          <ul>
+              <h5>Siga-nos nas nossas redes sociais</h5>
+              <li>
+                  <a href="https://instagram.com/davidloiola_" target="_blank"><img
+                          src="assets/icons/instagram-black.png" alt="instagram"></a>
+                  
+                  <a href="https://www.linkedin.com/in/davidloiola/" target="_blank"><img
+                          src="assets/icons/linkedin-black.png" alt="linkedin"></a>
+              </li>
+          </ul>
+      </div>
+      <p class="footer-copy">Todos os direitos reservados - David Loiola Contabilidade - CNPJ:
+          00-000.000/0000-00<br><span id="copy-site">Site criado por <a href="">Jonnas Cipriano</a></span></p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries[0].target.classList.add('init-hidden-off')
+  }, {
+    threshold: 1
+  })
+
+  Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+    observer.observe(element)
+  })
+</script>
+
+<script>
+  const observer2 = new IntersectionObserver(entries => {
+
+    Array.from(entries).forEach(entry => {
+      if (entry.intersectionRatio >= 1) {
+        entry.target.classList.add('init-hidden-main-off')
+      }
+    })
+
+  }, {
+    threshold: [0, .5, 1]
+  })
+
+  Array.from(document.querySelectorAll('.init-hidden-main')).forEach(element => {
+    observer2.observe(element)
+  })
+</script>
 </body>
 
 </html>
