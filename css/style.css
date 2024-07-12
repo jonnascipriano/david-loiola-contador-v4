@@ -13,7 +13,7 @@
   --cor3: #1b7dce;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -423,14 +423,14 @@ section#servicos {
   flex-direction: column;
   flex-wrap: wrap;
 
-  & h2{
+  & h2 {
     color: var(--cor2);
     font-weight: bold;
     font-family: Montserrat;
     display: inline;
   }
 
-  & h3{
+  & h3 {
     color: var(--cor1);
     font-weight: 600;
     font-family: Montserrat;
@@ -438,16 +438,16 @@ section#servicos {
     font-size: 20px;
   }
 
-  & h3::before{
+  & h3::before {
     content: "\00270E  ";
   }
 
-  & ul li{
+  & ul li {
     list-style: linear-gradient(to left, var(--cor2), var(--cor3));
+    margin-left: 30px;
   }
 
   & .order1 {
-
     width: 100%;
     display: flex;
 
@@ -460,23 +460,22 @@ section#servicos {
     }
 
     & .serv-it-flex {
-        padding: 0 50px;
-        float: right;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      padding: 0 50px;
+      float: right;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-            & .serv-it-text{
-                & h2{
-                    text-align: center;
-                }
-            }
+      & .serv-it-text {
+        & h2 {
+          text-align: center;
+        }
+      }
     }
   }
 
   & .order2 {
-
     width: 100%;
     display: flex;
 
@@ -487,110 +486,106 @@ section#servicos {
     }
 
     & .serv-it-flex {
-        padding: 0 50px;
-        float: left;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      padding: 0 50px;
+      float: left;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        & .serv-it-text{
-            & h2{
-                text-align: center;
-            }
+      & .serv-it-text {
+        & h2 {
+          text-align: center;
         }
+      }
     }
   }
 
   & .serv-it {
-
     margin: 200px 0;
 
-    /* display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 0 100px 0; */
     & img {
       width: 50%;
     }
 
-    /* & .serv-it-flex{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-self: auto;
-            width: 100%;
+    & .saber-mais {
+      display: block;
+      margin: auto;
+      width: 150px;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      padding: 5px;
+      color: white;
+      background-color: var(--cor2);
+      transition: .3s;
+    }
 
-            & .serv-it-text{
-                width: 100vh;
-                margin: auto;
-            }
-        } */
+    & .saber-mais:hover{
+      transform: scale(1.1);
+      text-decoration: none;
+    }
   }
 }
 
-@media screen and (max-width:721px) {
-
-
-    section#servicos{
-
-      & .serv-it{
+@media screen and (max-width: 721px) {
+  section#servicos {
+    & .serv-it {
+      display: block;
+      border-bottom: 1px solid;
+      box-shadow: 4px 10px 20px 0px black;
+      & img {
+        width: 100%;
         display: block;
-        border-bottom: 1px solid;
-        box-shadow: 4px 10px 20px 0px black;
-        & img{
-          width: 100%;
-          display: block;
-          border-radius: 0;
-        }
-      }
-
-        & .order1{
-            float: none;
-            margin: 0px 0;
-
-            & .serv-it-flex{
-                width: 100%;
-                margin: auto;
-                padding: 5px;
-                /* border: 2px solid var(--cor2); */
-                /* border-radius: 0 20px; */
-                /* box-shadow: 0px 0px 2px 0px var(--cor1); */
-
-                & .serv-it-text{
-                    & h2{
-                        text-align: start;
-                    }
-                }
-            }
-        }
-
-        & .order2{
-            float: none;
-            margin: 0px 0;
-
-            & .serv-it-flex{
-                width: 100%;
-                margin: auto;
-                padding: 5px;
-                /* border: 1px solid var(--cor2);
-                border-radius: 20px 0; */
-                /* box-shadow: 0px 0px 2px 0px var(--cor1); */
-
-                & .serv-it-text{
-                    & h2{
-                        text-align: end;
-                    }
-                }
-            }
-          }
-          & img {
-            display: none;
-          }
-
+        border-radius: 0;
       }
     }
+
+    & .order1 {
+      float: none;
+      margin: 0px 0;
+
+      & .serv-it-flex {
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+        /* border: 2px solid var(--cor2); */
+        /* border-radius: 0 20px; */
+        /* box-shadow: 0px 0px 2px 0px var(--cor1); */
+
+        & .serv-it-text {
+          & h2 {
+            text-align: start;
+          }
+        }
+      }
+    }
+
+    & .order2 {
+      float: none;
+      margin: 0px 0;
+
+      & .serv-it-flex {
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+        /* border: 1px solid var(--cor2);
+                border-radius: 20px 0; */
+        /* box-shadow: 0px 0px 2px 0px var(--cor1); */
+
+        & .serv-it-text {
+          & h2 {
+            text-align: end;
+          }
+        }
+      }
+    }
+    & img {
+      display: none;
+    }
+  }
+  
+}
 
 /* section#servicos{
 
@@ -616,17 +611,15 @@ section#servicos {
     }
 } */
 
-
 /* Fim da página servicos.html */
 
 /* Página contato.html */
 
-
-body#pag-contato section#cont-home{
+body#pag-contato section#cont-home {
   display: flex;
   flex-wrap: wrap;
   height: 30%;
-  & div.align-start-container{
+  & div.align-start-container {
     width: 100%;
     margin: 80px auto;
     display: flex;
@@ -637,14 +630,12 @@ body#pag-contato section#cont-home{
 }
 
 @media screen and (max-width: 760px) {
-  body#pag-contato section#cont-home{
-    & div.align-start-container{
+  body#pag-contato section#cont-home {
+    & div.align-start-container {
       flex-direction: column;
     }
   }
 }
-
-
 
 /* section#start-contato{
   width: 100%;
@@ -685,7 +676,6 @@ section#contato{
 } */
 
 /* Fim da página contato.html */
-
 
 footer {
   display: flex;
